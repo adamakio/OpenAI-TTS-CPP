@@ -2,7 +2,7 @@
 //
 
 #include "NetworkingCPP.h"
-
+#
 
 // Function to get response from OpenAI API
 bool getResponse(openai::Message& msg) {
@@ -57,7 +57,7 @@ int main() {
     }
 
     // Modify the file path to include the audio folder
-    std::filesystem::path filePath = audioFolderPath / "live.mp3";
+    std::filesystem::path filePath = audioFolderPath / "live.opus";
     std::string str = filePath.string();
     char* cstr = new char[str.length() + 1];
     strcpy(cstr, str.c_str());
@@ -70,12 +70,13 @@ int main() {
 		return 1;
 	}
 
-    openai::SharedData sharedData{fp, false};
+    openai::SharedData sharedData{ fp };
+    std::thread([&sharedData]{
+        openai::OpenAI openAI{ }; // Replace with your API key
+        openAI.textToSpeech("C plus plus is the best language in the world", &sharedData);
+    }).detach();
 
-    openai::OpenAI openAI{ }; // Replace with your API key
-    openAI.textToSpeech("C plus plus is the best language in the world", &sharedData);
-    
-    playAudioFile(cstr);
+    openai::playAudio(&sharedData);
 
     // Close the file
     fclose(fp);

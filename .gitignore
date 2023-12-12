@@ -33,3 +33,9 @@
 
 # VS
 .vs
+
+# Audio files
+*.mp3
+*.wav
+*.ogg
+*.flac

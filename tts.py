@@ -7,7 +7,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-for i in range(1, 10): 
+for i in range(1): 
   spoken_response = client.audio.speech.create(
     model="tts-1-hd",
     voice="alloy",

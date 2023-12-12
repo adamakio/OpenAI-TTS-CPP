@@ -22,6 +22,8 @@ find_path(MINIMP3_INCLUDE_DIRS
     NAMES "minimp3/minimp3.h" "minimp3/minimp3_ex.h"
     PATHS "C:/Users/16478/source/repos/NetworkingCPP/vcpkg_installed/x64-windows/include"
 )
+find_package(Opus CONFIG REQUIRED)
+find_package(Ogg CONFIG REQUIRED)
 
 file(GLOB HEADER_FILES "*.h")
 file(GLOB CPP_HEADER_FILES "*.hpp")
@@ -38,3 +40,5 @@ target_link_libraries(NetworkingCPP PRIVATE CURL::libcurl)
 target_link_libraries(NetworkingCPP PRIVATE portaudio)
 target_link_libraries(NetworkingCPP PRIVATE SndFile::sndfile)
 target_link_libraries(NetworkingCPP PRIVATE FLAC::FLAC)
+target_link_libraries(NetworkingCPP PRIVATE Opus::opus)
+target_link_libraries(NetworkingCPP PRIVATE Ogg::ogg)

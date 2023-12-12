@@ -209,6 +209,9 @@ NetworkingCPP_SOURCE_DIR:STATIC=C:/Users/16478/source/repos/NetworkingCPP
 //The directory containing a CMake configuration file for Ogg.
 Ogg_DIR:PATH=C:/Users/16478/source/repos/NetworkingCPP/vcpkg_installed/x64-windows/share/ogg
 
+//The directory containing a CMake configuration file for Opus.
+Opus_DIR:PATH=C:/Users/16478/source/repos/NetworkingCPP/vcpkg_installed/x64-windows/share/opus
+
 //The directory containing a CMake configuration file for SndFile.
 SndFile_DIR:PATH=C:/Users/16478/source/repos/NetworkingCPP/vcpkg_installed/x64-windows/share/SndFile
 

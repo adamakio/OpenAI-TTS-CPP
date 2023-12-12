@@ -1,5 +1,7 @@
 ﻿  NetworkingCPP.cpp
-C:\Users\16478\source\repos\NetworkingCPP\openai-reduced.hpp(176,46): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\16478\source\repos\NetworkingCPP\NetworkingCPP.cpp(121,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\16478\source\repos\NetworkingCPP\NetworkingCPP.cpp(125,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\16478\source\repos\NetworkingCPP\openai-reduced.hpp(322,66): warning C4267: 'argument': conversion from 'size_t' to 'long', possible loss of data
+C:\Users\16478\source\repos\NetworkingCPP\openai-reduced.hpp(324,50): warning C4267: 'argument': conversion from 'size_t' to 'long', possible loss of data
+C:\Users\16478\source\repos\NetworkingCPP\openai-reduced.hpp(394,46): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\16478\source\repos\NetworkingCPP\NetworkingCPP.cpp(63,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\16478\source\repos\NetworkingCPP\NetworkingCPP.cpp(67,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   NetworkingCPP.vcxproj -> C:\Users\16478\source\repos\NetworkingCPP\Debug\NetworkingCPP.exe

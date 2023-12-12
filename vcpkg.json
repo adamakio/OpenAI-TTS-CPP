@@ -1,6 +1,7 @@
 {
   "dependencies": [
     "curl",
+    "libflac",
     {
       "name": "libsndfile",
       "features": [
@@ -9,7 +10,8 @@
     },
     "minimp3",
     "nlohmann-json",
+    "opus",
     "portaudio",
-    "libflac"
+    "libogg"
   ]
 }

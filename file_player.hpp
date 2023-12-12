@@ -4,9 +4,9 @@
 #include <sndfile.h>
 
 // Define constants for audio settings
-const int SAMPLE_RATE = 24000;
-const int CHANNELS = 1;
-const int FRAMES_PER_BUFFER = 256;
+const int SAMPLE_RATE_MP3 = 24000;
+const int CHANNELS_MP3 = 1;
+const int FRAMES_PER_BUFFER_MP3 = 256;
 
 #include <mutex>
 #include <condition_variable>
@@ -56,7 +56,7 @@ void playAudioFile(const char* filePath) {
     }
 
     // Open PortAudio stream
-    err = Pa_OpenDefaultStream(&stream, 0, sfinfo.channels, paFloat32, SAMPLE_RATE, FRAMES_PER_BUFFER, audioCallback, sndfile);
+    err = Pa_OpenDefaultStream(&stream, 0, sfinfo.channels, paFloat32, SAMPLE_RATE_MP3, FRAMES_PER_BUFFER_MP3, audioCallback, sndfile);
     if (err != paNoError) {
         std::cerr << "PortAudio stream open error: " << Pa_GetErrorText(err) << std::endl;
         Pa_Terminate();
