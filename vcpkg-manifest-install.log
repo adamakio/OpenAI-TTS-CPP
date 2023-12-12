@@ -1,0 +1,48 @@
+Detecting compiler hash for triplet x64-windows...
+All requested packages are currently installed.
+Total install time: 200 ns
+curl provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(CURL CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE CURL::libcurl)
+
+The package libflac provides CMake targets:
+
+    find_package(FLAC CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE FLAC::FLAC)
+    
+    # Or use the C++ API
+    find_package(FLAC CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE FLAC::FLAC++)
+
+libsndfile provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(SndFile CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE SndFile::sndfile)
+
+minimp3 is header-only and can be used from CMake via:
+
+    find_path(MINIMP3_INCLUDE_DIRS "minimp3/minimp3.h")
+    target_include_directories(main PRIVATE ${MINIMP3_INCLUDE_DIRS})
+
+The package nlohmann-json provides CMake targets:
+
+    find_package(nlohmann_json CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE nlohmann_json::nlohmann_json)
+
+The package nlohmann-json can be configured to not provide implicit conversions via a custom triplet file:
+
+    set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
+
+For more information, see the docs here:
+    
+    https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
+
+portaudio provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(portaudio CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE portaudio)
+

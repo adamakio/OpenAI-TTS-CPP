@@ -1,0 +1,10 @@
+x64-windows/
+x64-windows/include/
+x64-windows/include/minimp3/
+x64-windows/include/minimp3/minimp3.h
+x64-windows/include/minimp3/minimp3_ex.h
+x64-windows/share/
+x64-windows/share/minimp3/
+x64-windows/share/minimp3/copyright
+x64-windows/share/minimp3/vcpkg.spdx.json
+x64-windows/share/minimp3/vcpkg_abi_info.txt

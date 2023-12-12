@@ -1,0 +1,4 @@
+﻿  NetworkingCPP.cpp
+C:\Users\16478\source\repos\NetworkingCPP\openai-reduced.hpp(69,28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\16478\source\repos\NetworkingCPP\openai-reduced.hpp(164,50): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  NetworkingCPP.vcxproj -> C:\Users\16478\source\repos\NetworkingCPP\Release\NetworkingCPP.exe

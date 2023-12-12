@@ -1,0 +1,15 @@
+{
+  "dependencies": [
+    "curl",
+    {
+      "name": "libsndfile",
+      "features": [
+        "external-libs"
+      ]
+    },
+    "minimp3",
+    "nlohmann-json",
+    "portaudio",
+    "libflac"
+  ]
+}

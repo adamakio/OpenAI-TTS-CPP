@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/minimp3-x64-windows-2021-11-30-11428c5d-7881-49a5-9f38-d62769cc9de7",
+  "name": "minimp3:x64-windows@2021-11-30 592387d33189d624bed2689c40d2b1e5d88a63774c7f57f57fe529691c08a777",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-ac02a9f660977426b8ec6392919fbb1d51b10998"
+    ],
+    "created": "2023-12-08T21:29:26Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "minimp3",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "2021-11-30",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@2997f9c06f0831c803fca134a599171dc2399bc4",
+      "homepage": "https://github.com/lieff/minimp3",
+      "licenseConcluded": "CC0-1.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Minimalistic, single-header library for decoding MP3. minimp3 is designed to be small, fast (with SSE and NEON support), and accurate (ISO conformant).",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "minimp3:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "592387d33189d624bed2689c40d2b1e5d88a63774c7f57f57fe529691c08a777",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "CC0-1.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "lieff/minimp3",
+      "downloadLocation": "git+https://github.com/lieff/minimp3@afb604c06bc8beb145fecd42c0ceb5bda8795144",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "633da0b20982f6f22c87d872c69626b2939ffb4519339cd0c090d7538308007cf633c07af57020cd2332a75c6e7b9bf3ebd5bda1af59dc96a4f0e85ce1b3f751"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/16478/AppData/Local/vcpkg/registries/git-trees/2997f9c06f0831c803fca134a599171dc2399bc4/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5b6b557b63f8106938774b46ccd6703a246a090ceaee317d29f26e119bbedd7c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/16478/AppData/Local/vcpkg/registries/git-trees/2997f9c06f0831c803fca134a599171dc2399bc4/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e07294c37df87bf3b9234ea89e3e4d9bbbc0cb6d6c5e54974ad538980b4af8e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+^C:\USERS\16478\SOURCE\REPOS\NETWORKINGCPP\CMAKEFILES\EA12B2964F8249C7A8C407E4CA8ECD01\GENERATE.STAMP.RULE
+setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/16478/source/repos/NetworkingCPP -BC:/Users/16478/source/repos/NetworkingCPP --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/16478/source/repos/NetworkingCPP/NetworkingCPP.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

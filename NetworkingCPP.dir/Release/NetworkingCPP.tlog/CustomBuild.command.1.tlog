@@ -1,0 +1,10 @@
+^C:\USERS\16478\SOURCE\REPOS\NETWORKINGCPP\CMAKELISTS.TXT
+setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/16478/source/repos/NetworkingCPP -BC:/Users/16478/source/repos/NetworkingCPP --check-stamp-file C:/Users/16478/source/repos/NetworkingCPP/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

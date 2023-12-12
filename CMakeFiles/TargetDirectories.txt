@@ -1,0 +1,3 @@
+C:/Users/16478/source/repos/NetworkingCPP/CMakeFiles/NetworkingCPP.dir
+C:/Users/16478/source/repos/NetworkingCPP/CMakeFiles/ALL_BUILD.dir
+C:/Users/16478/source/repos/NetworkingCPP/CMakeFiles/ZERO_CHECK.dir
